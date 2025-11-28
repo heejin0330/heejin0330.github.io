@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 - heejin0330 Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header-content">
+        <a href="index.html" class="logo">heejin0330.blog</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="테마 변경">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 게시글 본문 -->
+    <main class="post-container">
+      <article class="post-article">
+        <!-- 게시글 메타 정보 -->
+        <header class="post-header">
+          <h1 id="post-title" class="post-title">로딩 중...</h1>
+          <div class="post-meta">
+            <time id="post-date" class="post-date"></time>
+            <span id="post-category" class="post-category"></span>
+          </div>
+          <div id="post-tags" class="post-tags"></div>
+        </header>
+
+        <!-- 게시글 내용 -->
+        <div id="post-content" class="post-content">
+          <div class="loading">게시글을 불러오는 중...</div>
+        </div>
+      </article>
+
+      <!-- 이전/다음 게시글 네비게이션 -->
+      <nav class="post-navigation">
+        <a href="index.html" class="back-link">← 목록으로 돌아가기</a>
+      </nav>
+
+      <!-- Giscus 댓글 -->
+      <section class="comments-section">
+        <h2 class="comments-title">댓글</h2>
+        <div id="giscus-container"></div>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <p>© 2025 heejin0330. Powered by GitHub Pages.</p>
+    </footer>
+  </div>
+
+  <!-- 마크다운 파싱 라이브러리 -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- 코드 하이라이팅 -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-typescript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-css.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markdown.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-yaml.min.js"></script>
+
+  <script src="js/theme.js"></script>
+  <script src="js/post-loader.js"></script>
+</body>
+</html>
+

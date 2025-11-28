@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>heejin0330 Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header-content">
+        <a href="index.html" class="logo">heejin0330.blog</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="테마 변경">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 검색 및 필터 -->
+    <section class="search-section">
+      <input 
+        type="text" 
+        id="search-input" 
+        class="search-input" 
+        placeholder="게시글 검색..."
+        aria-label="게시글 검색"
+      >
+      <div id="tag-filters" class="tag-filters"></div>
+    </section>
+
+    <!-- 게시글 목록 -->
+    <main class="posts-container">
+      <div id="posts-list" class="posts-list">
+        <!-- 게시글이 여기에 동적으로 렌더링됩니다 -->
+      </div>
+      <div id="no-results" class="no-results" style="display: none;">
+        검색 결과가 없습니다.
+      </div>
+      <div id="loading" class="loading">
+        게시글을 불러오는 중...
+      </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <p>© 2025 heejin0330. Powered by GitHub Pages.</p>
+    </footer>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
